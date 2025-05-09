@@ -1,15 +1,10 @@
 'use client'
-import { Button } from "@/components/ui/button"
 import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
-  CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
 import {
   Tabs,
   TabsContent,
@@ -17,13 +12,10 @@ import {
   TabsTrigger,
 } from "@/components/ui/tabs"
 import React from 'react'
-import { use, useState } from "react";
 import Image from "next/image"
-import clsx from "clsx"
 import { List } from "@radix-ui/react-tabs"
 
 function Experience() {
-  const [activeTab, setActiveTab] = useState("experience");
   return (
     <Tabs defaultValue="experience" className="w-full mt-3">
       <TabsList className="grid w-full grid-cols-2 ">
@@ -67,7 +59,7 @@ function Experience() {
                 <CardDescription>
                   <List className="mx-2">
                     <li>Skills Clinic: Mentor / Finance Officer</li>
-                    <li>2-time recipient of the Dean's Honor List</li>
+                    <li>2-time recipient of the Dean&apos;s Honor List</li>
                   </List>
                 </CardDescription>
               </div>

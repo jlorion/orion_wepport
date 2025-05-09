@@ -1,11 +1,9 @@
 'use client'
 import Image from "next/image";
 import { useState } from 'react';
-import { Linkedin, Github, Twitter, Facebook, MapPin, Mail } from 'lucide-react';
+import { Linkedin, Github, MapPin, Mail } from 'lucide-react';
 import Experience from "@/components/Major/Experience";
-import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { List, Tabs } from "@radix-ui/react-tabs";
 
 
 export default function Home() {
@@ -77,7 +75,7 @@ export default function Home() {
           {/* Right - Info */}
           <div className="flex-1 mt-6 md:mt-0">
             <h1 className="flex flex-col md:flex-row text-2xl font-bold items-center md:items-center text-blue-400">
-              Hey! I'm Sef<motion.span whileHover={{ scale: [1, 1.3, 1], transition: { duration: 0.6, repeat: Infinity } }} className="text-yellow-400 inline-block cursor-pointer text-4xl">💛</motion.span>
+              Hey! I&apos;m Sef<motion.span whileHover={{ scale: [1, 1.3, 1], transition: { duration: 0.6, repeat: Infinity } }} className="text-yellow-400 inline-block cursor-pointer text-4xl">💛</motion.span>
             </h1>
            
             <motion.p
@@ -86,12 +84,10 @@ export default function Home() {
             whileHover="wiggle"
             variants={{}} // optional: required if using global animation coordination
             >
-              <div className="flex items-center">
               <motion.span variants={iconVariants}>
                 <MapPin size={16} />
               </motion.span>
                 Davao City, Philippines
-              </div>
             </motion.p>
 
             {/* Experience Cards */}
@@ -139,7 +135,7 @@ export default function Home() {
           
             </div>
             <div className="bg-gray-800 rounded-lg p-4 flex items-center justify-center transform transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg">
-              <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" width={35} height={35} />
+              <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" width={35} height={35} alt={"..."} />
             </div>
             <div className="bg-gray-800 rounded-lg p-4 flex items-center justify-center transform transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg">
               <i className="devicon-spring-original-wordmark colored text-5xl"></i>
